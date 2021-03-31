@@ -8,8 +8,14 @@ var wikiRefrence=document.querySelector(".wikiRefrence");
 var wikiList=document.querySelectorAll(".wikiList");
 
 function check(){
-    for(var i=0;i<webList.length;i++){
-        webList[i].style.display="";
+    if(webList[0].style.display==="none"){
+        for(var i=0;i<webList.length;i++){
+            webList[i].style.display="";
+        }
+    }else if (webList[0].style.display===""){
+        for(var i=0;i<webList.length;i++){
+            webList[i].style.display="none";
+        }
     }
 }
 
@@ -20,8 +26,14 @@ function check2(){
 }
 
 function check3(){
-    for(var i=0;i<youTubeList.length;i++){
-        youTubeList[i].style.display="";
+    if(youTubeList[0].style.display==="none"){
+        for(var i=0;i<youTubeList.length;i++){
+            youTubeList[i].style.display="";
+        }
+    }else if (youTubeList[0].style.display===""){
+        for(var i=0;i<youTubeList.length;i++){
+            youTubeList[i].style.display="none";
+        }
     }
 }
 
@@ -32,8 +44,14 @@ function check4(){
 }
 
 function check5(){
-    for(var i=0;i<googleList.length;i++){
-        googleList[i].style.display="";
+    if(googleList[0].style.display==="none"){
+        for(var i=0;i<googleList.length;i++){
+            googleList[i].style.display="";
+        }
+    }else if (googleList[0].style.display===""){
+        for(var i=0;i<googleList.length;i++){
+            googleList[i].style.display="none";
+        }
     }
 }
 
@@ -44,8 +62,14 @@ function check6(){
 }
 
 function check7(){
-    for(var i=0;i<wikiList.length;i++){
-        wikiList[i].style.display="";
+    if(wikiList[0].style.display==="none"){
+        for(var i=0;i<wikiList.length;i++){
+            wikiList[i].style.display="";
+        }
+    }else if (wikiList[0].style.display===""){
+        for(var i=0;i<wikiList.length;i++){
+            wikiList[i].style.display="none";
+        }
     }
 }
 
@@ -55,11 +79,11 @@ function check8(){
     }
 }
 
-webRefrence.addEventListener('mouseover',check);
-webRefrence.addEventListener('mouseout',check2);
-youTubeRefrence.addEventListener('mouseover',check3);
-youTubeRefrence.addEventListener('mouseout',check4);
-googleRefrence.addEventListener('mouseover',check5);
-googleRefrence.addEventListener('mouseout',check6);
-wikiRefrence.addEventListener('mouseover',check7);
-wikiRefrence.addEventListener('mouseout',check8);
+webRefrence.addEventListener('click',check);
+// webRefrence.addEventListener('click',check2);
+youTubeRefrence.addEventListener('click',check3);
+// youTubeRefrence.addEventListener('click',check4);
+googleRefrence.addEventListener('click',check5);
+// googleRefrence.addEventListener('click',check6);
+wikiRefrence.addEventListener('click',check7);
+// wikiRefrence.addEventListener('click',check8);
