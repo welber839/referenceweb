@@ -1,0 +1,58 @@
+.referenceBox {
+    margin:0 auto;
+    width:950px;
+    min-height:100px;
+}
+
+.webList, .youTubeList, .googleList, .wikiList {
+    background-color: rgb(230, 196, 162);
+    /*margin-bottom: 10px;*/
+    color:white;
+    height:30px;
+    line-height: 30px;
+    padding-left:10px;
+}
+
+.reInnerBox {
+    display: flex;
+    justify-content: center;
+}
+
+.reInnerBox > div {
+    width:80%;
+}
+
+.webRefrence, .youTubeRefrence, .googleRefrence, .wikiRefrence {
+    width:100%;
+}
+
+.webRefrence:hover, .youTubeRefrence:hover, .googleRefrence:hover, .wikiRefrence:hover {
+    cursor: pointer;
+}
+
+.reInnerBox a{
+    width:100%;
+}
+
+.reInnerBox a:link, .reInnerBox a:visited{
+    color:white;
+}
+
+.webList:hover, .youTubeList:hover, .googleList:hover, .wikiList:hover{
+    background-color:black;
+}
+
+.webList, .youTubeList, .googleList, .wikiList {
+    border-radius: 3px;
+}
+
+.reInnerBox h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(186, 117, 48);
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+}
